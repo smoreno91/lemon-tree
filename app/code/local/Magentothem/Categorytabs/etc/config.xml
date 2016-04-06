@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magentothem_Categorytabs>
+            <version>0.1.0</version>
+        </Magentothem_Categorytabs>
+    </modules>
+    <frontend>
+        <routers>
+            <categorytabs>
+                <use>standard</use>
+                <args>
+                    <module>Magentothem_Categorytabs</module>
+                    <frontName>categorytabs</frontName>
+                </args>
+            </categorytabs>
+        </routers>
+        <layout>
+            <updates>
+                <categorytabs>
+                    <file>categorytabs.xml</file>
+                </categorytabs>
+            </updates>
+        </layout>
+    </frontend>
+      
+    <global>
+      
+        <blocks>
+            <categorytabs>
+                <class>Magentothem_Categorytabs_Block_Categorytabs_Widget</class>
+            </categorytabs>
+        </blocks>
+        <helpers>
+            <categorytabs>
+                <class>Magentothem_Categorytabs_Helper</class>
+            </categorytabs>
+        </helpers>
+    </global>
+	<default>
+		<categorytabs>
+			<categorytabs_config>
+				<enabled>1</enabled>
+				<title>New Product</title>
+				<auto>0</auto>
+				<speed>3000</speed>
+				<interval>600</interval>
+				<show_price>1</show_price>
+				<addtocart>1</addtocart>
+				<addtowishlist>0</addtowishlist>
+				<addtocompare>0</addtocompare>
+				<review>0</review>
+				<description>0</description>
+				<maxlength></maxlength>
+				<qty>9</qty>
+				<items_show>5</items_show>
+				<item_width>200</item_width>
+				<width_thumbnail>135</width_thumbnail>
+				<height_thumbnail>135</height_thumbnail>
+				<next_back>1</next_back>
+				<nav_ctrl>0</nav_ctrl>
+			</categorytabs_config>
+		</categorytabs>
+	</default>
+</config>

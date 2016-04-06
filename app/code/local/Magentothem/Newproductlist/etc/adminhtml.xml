@@ -1,0 +1,58 @@
+<?xml version="1.0"?> 
+<config>
+<!-- 	<menu>
+		<magentothem translate="title" module="newproductlist">
+			<title>Magentothem</title>
+			<sort_order>71</sort_order>               
+			<children>
+				<newproductlist translate="title" module="newproductlist">
+					<title>New Products List</title>
+					<sort_order>0</sort_order>
+					<children>
+						<configuration>
+							<title>Configuration</title>
+							<sort_order>1</sort_order>
+							<action>adminhtml/system_config/edit/section/newproductlist</action>
+						</configuration>
+					</children>
+				</newproductlist>
+			</children>
+		</magentothem>
+	</menu> -->
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<newproductlist>
+										<title>New Product List</title>
+									</newproductlist>
+								</children>
+							</config>
+						</children>
+					</system>		
+					<magentothem translate="title" module="newproductlist">
+						<title>Magentothem</title>
+						<sort_order>71</sort_order>               
+						<children>
+							<newproductlist translate="title" module="newproductlist">
+								<title>New Products List</title>
+								<sort_order>0</sort_order>
+								<children>
+									<configuration>
+										<title>Configuration</title>
+										<sort_order>1</sort_order>
+										<action>adminhtml/system_config/edit/section/newproductlist</action>
+									</configuration>
+								</children>
+							</newproductlist>
+						</children>
+					</magentothem>					
+				</children>
+			</admin>
+        </resources>
+	</acl>
+</config>

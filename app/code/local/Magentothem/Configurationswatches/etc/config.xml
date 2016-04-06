@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magentothem_Configurationswatches>
+            <version>0.1.0</version>
+        </Magentothem_Configurationswatches>
+    </modules>
+    <global>
+        <blocks>
+            <magentothem_configurationswatches>
+                <class>Magentothem_Configurationswatches_Block</class>
+            </magentothem_configurationswatches>
+            <configurableswatches>
+                <rewrite>
+                    <catalog_media_js_product>Magentothem_Configurationswatches_Block_ConfigurableSwatches_Catalog_Media_Js_Product</catalog_media_js_product>
+					<catalog_media_js_list>Magentothem_Configurationswatches_Block_ConfigurableSwatches_Catalog_Media_Js_List</catalog_media_js_list>
+                </rewrite>
+            </configurableswatches>
+        </blocks>
+        <helpers>
+            <magentothem_configurationswatches>
+                <class>Magentothem_Configurationswatches_Helper</class>
+            </magentothem_configurationswatches>
+            <configurableswatches>
+                <rewrite>
+                    <mediafallback>Magentothem_Configurationswatches_Helper_ConfigurableSwatches_Mediafallback</mediafallback>
+                </rewrite>
+            </configurableswatches>
+        </helpers>
+    </global>
+    <adminhtml>
+        <menu>
+            <magentothem translate="title" module="magentothem_configurationswatches">
+                <title>Magentothem</title>
+                <sort_order>71</sort_order>
+                <children>
+                    <configurationswatches translate="title" module="magentothem_configurationswatches">
+                        <title>Configuration Swatches</title>
+                        <sort_order>56</sort_order>
+                        <children>
+                            <configuration>
+                                <title>Configuration</title>
+                                <sort_order>1</sort_order>
+                                <action>adminhtml/system_config/edit/section/configurationswatches</action>
+                            </configuration>
+                        </children>
+                    </configurationswatches>
+                </children>
+            </magentothem>
+        </menu>
+    </adminhtml>
+    <default>
+        <configurationswatches>
+            <configurationswatches_config>
+                <width_resize>250</width_resize>
+                <height_resize>250</height_resize>
+            </configurationswatches_config>
+        </configurationswatches>
+    </default>
+</config>

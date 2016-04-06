@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <magentothem translate="label" module="magentothem_configurationswatches">
+            <label>Magentothem</label>
+            <sort_order>205</sort_order>
+        </magentothem>
+    </tabs>
+    <sections>
+        <configurationswatches translate="label" module="magentothem_configurationswatches">
+            <label>Configuration Swatches</label>
+            <tab>magentothem</tab>
+            <sort_order>194</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <configurationswatches_config translate="label">
+                    <label>Configuration Swatches Image Resize</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <width_resize translate="label">
+                            <label>Width Resize</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </width_resize>
+                        <height_resize translate="label">
+                            <label>Height Resize</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </height_resize>
+                    </fields>
+                </configurationswatches_config>
+            </groups>
+        </configurationswatches>
+    </sections>
+</config>
