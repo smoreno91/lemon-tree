@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<elise>
+    <blocks>
+        <block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                    <![CDATA[<div class="row">
+<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col1">
+<div class="footer-title">
+<h2>about Market</h2>
+</div>
+<div class="footer-content">
+<ul>
+<li class="first"><a href="{{store direct_url="about-magento-demo-store"}}">about us</a></li>
+<li><a href="{{store direct_url="blog"}}">blog</a></li>
+<li><a href="#">terms of use</a></li>
+<li><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">privacy policy</a></li>
+<li class="last"><a href="{{store direct_url="catalog/seo_sitemap/category/"}}">site map</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col2">
+<div class="footer-title">
+<h2>CUSTOMER SERVICE</h2>
+</div>
+<div class="footer-content">
+<ul>
+<li class="first"><a href="#">shipping policy</a></li>
+<li><a href="#">Compensation Fist</a></li>
+<li><a href="{{store direct_url="customer/account/"}}">My Account</a></li>
+<li><a href="#">Return Policy</a></li>
+<li class="last"><a href="{{store direct_url="contacts/"}}">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col3">
+<div class="footer-title">
+<h2>fashion women</h2>
+</div>
+<div class="footer-content">{{widget type="categorytabs/advanced" title="fashion men" identify="category_women" cat_ids="4" template="magentothem/categorytabs/categorytabs.phtml" products_count="2" product_on_row="2" width_thumbnail="800" height_thumbnail="1085"}}</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col4">
+<div class="footer-title">
+<h2>fashion men</h2>
+</div>
+<div class="footer-content">{{widget type="categorytabs/advanced" title="fashion men" identify="category_men" cat_ids="81" template="magentothem/categorytabs/categorytabs.phtml" products_count="2" product_on_row="2" width_thumbnail="800" height_thumbnail="1085"}}</div>
+</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Footer Static 2</title>
+            <identifier>footer_static_2</identifier>
+            <content>
+                      <![CDATA[
+                        <div class="link-web">
+<ul>
+<li><a class="face" href="#">face</a></li>
+<li><a class="twitter" href="#">twitter</a></li>
+<li><a class="instagram" href="#">instagram</a></li>
+<li><a class="youtube" href="#">youtube</a></li>
+</ul>
+</div>
+<div class="newsletter-container">{{block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"}}</div>
+                        ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Payment</title>
+            <identifier>payment</identifier>
+            <content>
+                      <![CDATA[
+					  <div class="payment"><img alt="" src="{{media url="wysiwyg/payment.png"}}" /></div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+ 
+        <block>
+            <title>Menu Links</title>
+            <identifier>pt_menu_links</identifier>
+            <content>
+                 <![CDATA[<ul>
+<li><a href="{{store direct_url="newproductlist"}}">new product</a></li>
+</ul>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Contacts</title>
+            <identifier>static_contacts</identifier>
+            <content>
+                 <![CDATA[<div class="map-contacts"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6997169.075258479!2d-99.09065332845108!3d31.093428132571923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2zRGFsbGFzLCBUZXhhcywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1419306684089" height="300" width="100%"></iframe></div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Block Header</title>
+            <identifier>block_header</identifier>
+            <content>
+                 <![CDATA[<div class="block-header">Call us free 24/7: (8888) 123 456 789</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Custom Menu Bottom</title>
+            <identifier>pt_menu_idcat_81</identifier>
+            <content>
+                 <![CDATA[<div class="row">
+<div class="col-xs-6"><img alt="" src="{{media url="wysiwyg/custom_menu1.jpg"}}" /></div>
+<div class="col-xs-6"><img alt="" src="{{media url="wysiwyg/custom_menu2.jpg"}}" /></div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Home3 Banner Static Top</title>
+            <identifier>banner_static_top</identifier>
+            <content>
+                 <![CDATA[
+				 <div class="box-container">
+<div class="banner-box banner-box1">
+<div class="box-inner box-inner1"><img alt="" src="{{media url="wysiwyg/home2_static1.jpg"}}" />
+<div class="text">
+<div class="text-inner">
+<h1 class="name-cat">women</h1>
+<a href="# class=">shop now</a></div>
+</div>
+</div>
+</div>
+<div class="banner-box banner-box2">
+<div class="box-inner box-inner2"><img alt="" src="{{media url="wysiwyg/home2_static2.jpg"}}" />
+<div class="text">
+<div class="text-inner">
+<h1 class="name-cat">headwear</h1>
+<a href="# class=">shop now</a></div>
+</div>
+</div>
+</div>
+<div class="banner-box banner-box1">
+<div class="box-inner box-inner3"><img alt="" src="{{media url="wysiwyg/home2_static3.jpg"}}" />
+<div class="text">
+<div class="text-inner">
+<h1 class="name-cat">handbags</h1>
+<a href="# class=">shop now</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="box-container">
+<div class="banner-box banner-box2">
+<div class="box-inner box-inner4"><img alt="" src="{{media url="wysiwyg/home2_static4.jpg"}}" />
+<div class="text">
+<div class="text-inner">
+<h1 class="name-cat">men</h1>
+<a href="# class=">shop now</a></div>
+</div>
+</div>
+</div>
+<div class="banner-box banner-box1">
+<div class="box-inner box-inner5"><img alt="" src="{{media url="wysiwyg/home2_static5.jpg"}}" />
+<div class="text">
+<div class="text-inner">
+<h1 class="name-cat">accessories</h1>
+<a href="# class=">shop now</a></div>
+</div>
+</div>
+</div>
+<div class="banner-box banner-box1">
+<div class="box-inner box-inner6"><img alt="" src="{{media url="wysiwyg/home2_static6.jpg"}}" />
+<div class="text">
+<div class="text-inner">
+<h1 class="name-cat">shoew</h1>
+<a href="# class=">shop now</a></div>
+</div>
+</div>
+</div>
+</div>
+				 ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Home3 Banner Static</title>
+            <identifier>banner_static</identifier>
+            <content>
+                 <![CDATA[<div class="banner-box banner-box1">
+<div class="box-inner"><img alt="" src="{{media url="wysiwyg/home2_static7.jpg"}}" />
+<div class="text">
+<h2>up to 30% off</h2>
+<h1>Sales 2o15</h1>
+<p>Hot &amp; Trendy Clother</p>
+<a class="shop-now" href="#">shopping</a></div>
+</div>
+</div>
+<div class="banner-box banner-box2">
+<div class="box-inner"><img alt="" src="{{media url="wysiwyg/home2_static8.jpg"}}" />
+<div class="text">
+<h1>spring summer 2015</h1>
+<a class="shop-now" href="#">shopping</a></div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Home3 Banner Static Bottom</title>
+            <identifier>banner_static_bottom</identifier>
+            <content>
+                 <![CDATA[<div class="row">
+<div class="col-md-3 col-sm-3 col-sms-6 col-smb-12">
+<div class="banner-box banner-box1">
+<div class="box-inner"><a class="image" href="#"><img alt="" src="{{media url="wysiwyg/banner_static1.png"}}" /></a>
+<div class="text">
+<h1>Free Delivery</h1>
+<p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-sms-6 col-smb-12">
+<div class="banner-box banner-box2">
+<div class="box-inner"><a class="image" href="#"><img alt="" src="{{media url="wysiwyg/banner_static2.png"}}" /></a>
+<div class="text">
+<h1>Safe &amp; Secure</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maurisfermentum dictum.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-sms-6 col-smb-12">
+<div class="banner-box banner-box3">
+<div class="box-inner"><a class="image" href="#"><img alt="" src="{{media url="wysiwyg/banner_static3.png"}}" /></a>
+<div class="text">
+<h1>Money Back Guarantee</h1>
+<p>Etiam cursus leo vel metus. Nulla facilisi aenean nac eros. Vestibulum ante ipsum.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-sms-6 col-smb-12">
+<div class="banner-box banner-box4">
+<div class="box-inner"><a class="image" href="#"><img alt="" src="{{media url="wysiwyg/banner_static4.png"}}" /></a>
+<div class="text">
+<h1>Call Us Toll Free</h1>
+<p>Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet, tincidunt ant.</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Static</title>
+            <identifier>banner_static</identifier>
+            <content>
+                 <![CDATA[<div class="banner-left"><a href="{{store direct_url="women.html"}}"><img alt="" src="{{media url="wysiwyg/banner_left.jpg"}}" /></a></div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+    </blocks>
+
+</elise>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<elise>
+    <resources>
+        <resource>
+            <title>Elise3 Home page</title>
+            <identifier>elise_home</identifier>
+            <root_template>one_column</root_template>
+            <content><![CDATA[<div class="home-content">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-sms-12">
+<div class="category-container category-container1">{{widget type="categorytabsliders/advanced" title="category1" identify="category1" cat_ids="81" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="9" product_on_row="3" width_thumbnail="800" height_thumbnail="1085"}}</div>
+</div>
+<div class="col-md-6 col-sm-6 col-sms-12">
+<div class="category-container category-container2">{{widget type="categorytabsliders/advanced" title="category2" identify="category2" cat_ids="4" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="9" product_on_row="3" width_thumbnail="800" height_thumbnail="1085"}}</div>
+</div>
+</div>
+</div>]]></content>
+            <sort_order>1</sort_order>
+            <is_active>1</is_active>
+        </resource>
+    </resources>
+	<resources>
+        <resource>
+            <title>404 Not Found</title>
+            <identifier>no-route1</identifier>
+            <root_template>one_column</root_template>
+				<content><![CDATA[
+					<div class="page-not-found">
+<div class="page-title">
+<h1>Oops ! That Page Can't Be Found.</h1>
+</div>
+<img alt="" src="{{media url="wysiwyg/img404.png"}}" />
+<div class="page-content">
+<div class="des-container">
+<p>Can't find what you need? Take a moment and do a search below!</p>
+<h1 class="back-home"><a href="{{store url=""}}">back to homepage</a></h1>
+</div>
+</div>
+</div>
+				]]></content>
+				<sort_order>1</sort_order>
+            <is_active>1</is_active>
+        </resource>
+    </resources>
+</elise>
