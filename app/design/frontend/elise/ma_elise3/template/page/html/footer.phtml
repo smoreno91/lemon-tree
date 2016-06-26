@@ -28,16 +28,14 @@
 
 
 <div class="ma-footer-container"> 
-	<div class="footer-static-2">
+	<!-- <div class="footer-static-2">
 		<div class="container">
 			<div class="title-footer"><h2><?php echo $this->__('say up to date')?></h2></div>
 			<div class="footer-content">
 				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_static_2')->toHtml() ?>
-			</div>
-			
-		</div>
-		
-	</div>  
+			</div>			
+		</div>		
+	</div>   -->
 	 
 	<div class="footer-static">
 		<div class="container">
@@ -47,11 +45,14 @@
 	<div class="footer">
 		<div class="container">
 			<div class="box-left">
-				<?php echo $this->getChildHtml("footer_links") ?>
+				<!-- <?php echo $this->getChildHtml("footer_links") ?> -->
 				<address><?php echo $this->getCopyright() ?></address>
 			</div> 
-			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('payment')->toHtml() ?>
-			<?php echo $this->getChildHtml("store_switcher")?>
+			<div class="box-right">
+				<a href="#"><img src="" alt="Liebre Creativa"></a>
+			</div>
+			<!-- <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('payment')->toHtml() ?> -->
+			<!-- <?php echo $this->getChildHtml("store_switcher")?> -->
 			
 		</div>
 		

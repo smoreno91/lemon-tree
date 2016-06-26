@@ -2801,6 +2801,7 @@ display: block !important;
 .ma-footer-container {  } 
 .footer { padding: 10px 0; text-align: center; background: #efefef; }
 .footer .box-left { float: left;}
+.footer .box-right { float: right;}
 .footer .store-switcher { display:inline-block; margin: 7px 0; color:#fff; }
 .footer .store-switcher label { font-weight: normal; vertical-align:middle; color: #666; margin: 0; }
 .footer .store-switcher select { padding:0; vertical-align:middle; text-transform: capitalize; }
