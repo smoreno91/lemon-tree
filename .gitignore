@@ -90,6 +90,9 @@ LICENSE.html
 LICENSE.txt
 LICENSE_EE*
 /mage
+media/email/
+media/favicon/
+media/wysiwyg/
 media/customer/
 media/dhl/
 media/downloadable/
