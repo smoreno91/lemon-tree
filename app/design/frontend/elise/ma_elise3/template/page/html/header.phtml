@@ -72,7 +72,8 @@
 						<?php echo $this->getChildHtml('topSearch') ?> 
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-12 col-sms-12">
-						<div class="quick-access">
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('social_media_header')->toHtml() ?>
+						<div class="quick-acces hide">
 							<div class="top-cart-wrapper">
 								<div class="top-cart-contain">
 									<?php echo $this->getChildHtml('top_cart_mini') ?>
