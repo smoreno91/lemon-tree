@@ -47,7 +47,7 @@
 			<div class="box-left">
 				<!-- <?php echo $this->getChildHtml("footer_links") ?> -->
 				<!-- <address><?php echo $this->getCopyright() ?></address> -->
-				<a target="_blank" href="https://www.facebook.com/liebrecreativa/?fref=ts"><span style="font-size: 14px; vertical-align: middle; line-height: 33px; color: #727272; padding: 8px;">Visual by:</span><img src="/media/wysiwyg/logo_liebre_creativa.png" alt="Liebre Creativa"></a>
+				<a class="link-liebre-creativa" target="_blank" href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('link_liebre_creativa')->getValue('text');?>"><span>Visual by:</span><img src="/media/wysiwyg/logo_liebre_creativa.png" alt="Liebre Creativa"></a>
 			</div> 
 			<!-- <?php echo $this->getChildHtml("store_switcher")?> -->
 			

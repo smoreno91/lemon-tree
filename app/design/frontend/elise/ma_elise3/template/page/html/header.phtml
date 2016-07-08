@@ -73,7 +73,17 @@
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-12 col-sms-12">
 						<div class="quick-access">
-							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('social_media_header')->toHtml() ?>
+							<div class="social-media">
+								<a href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('facebook_lemon_tree')->getValue('text');?>" target="_blank">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+								<a href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('twitter_lemon_tree')->getValue('text');?>" target="_blank">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+								<a href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('instagram_lemon_tree')->getValue('text');?>" target="_blank">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+							</div>
 							<div class="top-cart-wrapper hide">
 								<div class="top-cart-contain">
 									<?php echo $this->getChildHtml('top_cart_mini') ?>
