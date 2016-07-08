@@ -72,14 +72,14 @@
 						<?php echo $this->getChildHtml('topSearch') ?> 
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-12 col-sms-12">
-						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('social_media_header')->toHtml() ?>
-						<div class="quick-acces hide">
-							<div class="top-cart-wrapper">
+						<div class="quick-access">
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('social_media_header')->toHtml() ?>
+							<div class="top-cart-wrapper hide">
 								<div class="top-cart-contain">
 									<?php echo $this->getChildHtml('top_cart_mini') ?>
 								</div>
 							</div> 
-							<div class="link-container">
+							<div class="link-container hide">
 								<span class="icon-links"><?php echo $this->__('account') ?></span>
 								<?php echo $this->getChildHtml('topLinks') ?>
 							</div>
