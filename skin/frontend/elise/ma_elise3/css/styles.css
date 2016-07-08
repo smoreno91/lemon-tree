@@ -4598,6 +4598,7 @@ transition: all 0.5s ease-out;
 	.add-to-cart button.button { clear: both;  margin: 10px 0 0; }
 }
 /* Custom code */
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 .social-media a:not(:first-child) { margin-left: 10px; }
 
 .page-subtitle { overflow:hidden; margin:0 0 30px; border-bottom: 2px solid #f7505a; padding: 10px; }
