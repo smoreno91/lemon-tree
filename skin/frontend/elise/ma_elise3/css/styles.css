@@ -225,7 +225,7 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .form-list-narrow li .input-box { margin-bottom:6px; }
 .form-list-narrow li.wide .input-box { width:260px; }
 .form-list-narrow li.wide input.input-text,
-.form-list-narrow li.wide textarea { width:254px }
+.form-list-narrow li.wide textarea { width:254px; }
 .form-list-narrow li.wide select { width:260px; }
 
 /* Customer */
@@ -368,13 +368,15 @@ p.required { font-size:11px; text-align:right; color:#e95668; font-family: arial
 /* Page Heading */
 .page-title { overflow:hidden; margin:0 0 30px; border: 4px solid #f7505a; padding: 10px; }
 .page-title h1,
-.page-title h2 {   text-transform: uppercase;
+.page-title h2,
+.page-title h3 { text-transform: uppercase;
   font-weight: bold;
   color: #f7505a;
   font-size: 26px;
   text-align: center;
   letter-spacing: 3px;
   margin-bottom: 0px; }
+.page-title h3 {font-size: 15px;}
 .page-title .separator { margin:0 3px; }
 .page-title .link-rss { float:right; margin:7px 0 0; }
 .title-buttons { text-align:right; }
@@ -4606,9 +4608,23 @@ transition: all 0.5s ease-out;
 
 .page-subtitle { overflow:hidden; margin:0 0 30px; border-bottom: 2px solid #f7505a; padding: 10px; }
 .page-subtitle h1,
-.page-subtitle h2 { text-transform: uppercase; color: #f7505a; font-size: 19px; text-align: center; letter-spacing: 3px; margin-bottom: 0px; }
+.page-subtitle h2,
+.page-subtitle h3 { text-transform: uppercase; color: #f7505a; font-size: 19px; text-align: center; letter-spacing: 3px; margin-bottom: 0px; }
+.page-subtitle h3 { font-size:15px; }
 .page-subtitle .separator { margin:0 3px; }
 .page-subtitle .link-rss { float:right; margin:7px 0 0; }
 
 .store-image { text-align:center; margin-bottom: 30px; }
 .store-map { margin-bottom: 30px; }
+
+.contacts-index-index .fieldset { margin-top: 0px; }
+.contacts-index-index #comment { width: 100%; }
+.contacts-index-index input,
+.contacts-index-index textarea { background-color: #D3D3D3; }
+@media (max-width: 991px) and (min-width: 768px){
+	.contacts-index-index .form-list .input-box,
+	.contacts-index-index .form-list select,
+	.contacts-index-index .form-list input.input-text {
+	    width: 100%;
+	}	
+}
