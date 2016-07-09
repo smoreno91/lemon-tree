@@ -1,5 +1,18 @@
 <div class="banner-static-bottom"> 
+	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner_static_bottom')->toHtml() ?>
 	<div class="container"> 
-		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner_static_bottom')->toHtml() ?>
+		<div class="col-xs-12">
+	        <div class="social-media social-media-bigger">
+	            <a href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('facebook_lemon_tree')->getValue('text');?>" target="_blank">
+	                <i class="fa fa-facebook" aria-hidden="true"></i>
+	            </a>
+	            <a href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('twitter_lemon_tree')->getValue('text');?>" target="_blank">
+	                <i class="fa fa-twitter" aria-hidden="true"></i>
+	            </a>
+	            <a href="<?php echo Mage::getModel('core/variable')->setStoreId(Mage::app()->getStore()->getId())->loadByCode('instagram_lemon_tree')->getValue('text');?>" target="_blank">
+	                <i class="fa fa-instagram" aria-hidden="true"></i>
+	            </a>
+	        </div>
+	    </div>
 	</div>
 </div>
