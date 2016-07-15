@@ -4609,7 +4609,7 @@ iframe { border: 0; }
 	.banner-static .banner-box2 { padding-left: 10px; }
 }
 
-.social-media { padding: 10px 5px; text-align: center; }
+.social-media { padding: 7px 5px; text-align: center; }
 .social-media a:not(:first-child) { margin-left: 10px; }
 .social-media i { -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; padding: 7px; height: 38px; width: 38px; font-size: 25px; display: inline-block; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; color: white; background-color: #a5a5a5;}
 .social-media a:hover i { background-color: #ccc; }
