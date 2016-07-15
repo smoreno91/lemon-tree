@@ -4615,7 +4615,15 @@ transition: all 0.5s ease-out;
 .page-subtitle .separator { margin:0 3px; }
 .page-subtitle .link-rss { float:right; margin:7px 0 0; }
 
-.store-image { text-align:center; margin-bottom: 30px; }
+.store-image { text-align:center; margin-bottom: 30px; position: relative; float: left; }
+.store-image figure { margin: 0; padding: 0; position: relative; cursor: pointer; -webkit-margin-before: 15px; }
+.store-image figure > img { display: block; position: relative; z-index: 10; margin: -15px 0; }
+.store-image figure figcaption { display: block; position: absolute; z-index: 5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.store-image figure figcaption { top: 0; left: 0; width: 100%; height: 100%; text-align: center; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: rotateY(-180deg); -moz-transform: rotateY(-180deg); transform: rotateY(-180deg); -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
+.store-image figure > img { -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
+.store-image figure:hover > img { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); transform: rotateY(180deg); }
+.store-image figure:hover figcaption { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+
 .store-map { margin-bottom: 30px; }
 
 .social-media-bigger { margin-top: 35px; }
