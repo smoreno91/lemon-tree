@@ -1510,3 +1510,7 @@ if (typeof Object.create !== "function") {
         afterLazyLoad: false
     };
 }(jQuery, window, document));
+
+jQuery(document).ready(function() {
+    jQuery("#lookbook-carousel").owlCarousel();
+});
