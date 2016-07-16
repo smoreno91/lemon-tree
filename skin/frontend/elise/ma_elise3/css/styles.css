@@ -4609,6 +4609,9 @@ iframe { border: 0; }
 	.banner-static .banner-box2 { padding-left: 10px; }
 }
 
+.banner-static .banner-box1:hover,
+.banner-static .banner-box2:hover { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+
 .social-media { padding: 7px 5px; text-align: center; }
 .social-media a:not(:first-child) { margin-left: 10px; }
 .social-media i { -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; padding: 7px; height: 38px; width: 38px; font-size: 25px; display: inline-block; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; color: white; background-color: #a5a5a5;}
@@ -4652,3 +4655,7 @@ iframe { border: 0; }
 @media screen and (max-width: 768px){
 	.banner-contacto { margin-top: 30px; }
 }
+
+.page-title-image { text-align: center; margin-bottom:30px; }
+.page-title-image img { -webkit-transition: all 0.7s ease; transition: all 0.7s ease; }
+.page-title-image img:hover { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); }
