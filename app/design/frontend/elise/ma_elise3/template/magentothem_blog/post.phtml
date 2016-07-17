@@ -9,10 +9,7 @@
 	<div class="des-container"> 
 		<div class="postTitle">
 			<h2><?php echo $post->getTitle(); ?></h2>
-			
 		</div>
-
-		
 		<div class="post-by">
 			<div class="post">
 				<?php $postCats = $post->getCats(); ?>
@@ -25,7 +22,15 @@
 					<?php echo Mage::helper('blog')->__('Posted'); ?>
 				<?php endif; ?><?php echo $this->__("By"); ?> <h4 class="poster"><?php echo $post->getUser(); ?></h4>
 			</div>
-			<h3><?php echo $post->getCreatedTime(); ?></h3>
+            <?php $date = strtotime(date('d/m/Y', strtotime($post->getCreatedTime()))); ?>
+			<h3>
+                <?php
+                    echo $this->__(date("F", $date));
+                    echo date(" d", $date);
+                    echo " del ";
+                    echo date("Y", $date);
+                ?>
+            </h3>
 		</div>
 		<div class="postContent"><?php echo $post->getPostContent(); ?></div>
 		<?php echo $this->getBookmarkHtml($post) ?>
