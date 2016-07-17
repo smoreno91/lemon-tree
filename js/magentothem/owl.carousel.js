@@ -1514,7 +1514,7 @@ if (typeof Object.create !== "function") {
 jQuery(document).ready(function() {
     jQuery("#lookbook-carousel").owlCarousel();
 
-    jQuery('#modal-lookbook').on('show.bs.modal', function (event) {
+    jQuery('#modal-lemontree').on('show.bs.modal', function (event) {
         var recipient = jQuery(event.relatedTarget); // Button that triggered the modal
 
         var modal = jQuery(this);
