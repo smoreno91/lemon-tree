@@ -1513,4 +1513,13 @@ if (typeof Object.create !== "function") {
 
 jQuery(document).ready(function() {
     jQuery("#lookbook-carousel").owlCarousel();
+
+    jQuery('#modal-lookbook').on('show.bs.modal', function (event) {
+        var recipient = jQuery(event.relatedTarget); // Button that triggered the modal
+
+        var modal = jQuery(this);
+        modal.find('.box-image img').attr('src', recipient.find('img').attr('src'));
+        modal.find('.box-text').text(recipient.data('text'));
+        modal.find('.box-price').text("$"+recipient.data('price'));
+    })
 });
