@@ -27,11 +27,11 @@
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
 
 <div class="page-title">
-    <h1>¡Hola!</h1>
-    <h3>Qué rico leerte :)</h3>
+    <h1><?php echo $this->__('Hi!') ?></h1>
+    <h3><?php echo $this->__('Good to see you :)') ?></h3>
 </div>
 <div class="page-subtitle">
-    <h3>Si tienes alguna inquietud, sugerencia o algún problemilla con tus compras, por favor escríbenos.</h3>
+    <h3><?php echo $this->__('If you have any questions, suggestions or problems with your purchase, please contact us.') ?></h3>
 </div>
 <div class="container">
     <div class="col-sm-7">
@@ -41,27 +41,27 @@
                 <!-- <h2 class="legend"><?php echo Mage::helper('contacts')->__('Contact Information') ?></h2> -->
                 <ul class="form-list">
                     <li>
-                        <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label>
+                        <!-- <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label> -->
                         <div class="input-box">
-                            <input name="name" id="name" title="<?php echo Mage::helper('contacts')->__('Name') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+                            <input name="name" id="name" title="<?php echo Mage::helper('contacts')->__('Name') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" placeholder="<?php echo $this->__('Your Name') ?>" />
                         </div>
                     </li>
                     <li>
-                        <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+                        <!-- <label for="telephone"><?php echo Mage::helper('contacts')->__('Telephone') ?></label> -->
                         <div class="input-box">
-                            <input name="email" id="email" title="<?php echo Mage::helper('contacts')->__('Email') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
+                            <input name="telephone" id="telephone" title="<?php echo Mage::helper('contacts')->__('Telephone') ?>" value="" class="input-text" type="text" placeholder="<?php echo $this->__('Your Cellphone') ?>"/>
                         </div>
                     </li>
                     <li>
-                        <label for="telephone"><?php echo Mage::helper('contacts')->__('Telephone') ?></label>
+                        <!-- <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label> -->
                         <div class="input-box">
-                            <input name="telephone" id="telephone" title="<?php echo Mage::helper('contacts')->__('Telephone') ?>" value="" class="input-text" type="text" />
+                            <input name="email" id="email" title="<?php echo Mage::helper('contacts')->__('Email') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" placeholder="<?php echo $this->__('Your Email') ?>"/>
                         </div>
                     </li>
                     <li>
-                        <label for="comment" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Comment') ?></label>
+                        <!-- <label for="comment" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Comment') ?></label> -->
                         <div class="input-box">
-                            <textarea name="comment" id="comment" title="<?php echo Mage::helper('contacts')->__('Comment') ?>" class="required-entry input-text" cols="5" rows="2"></textarea>
+                            <textarea name="comment" id="comment" title="<?php echo Mage::helper('contacts')->__('Comment') ?>" class="required-entry input-text" cols="5" rows="2" placeholder="<?php echo $this->__('Now, Let us know!') ?>"></textarea>
                         </div>
                     </li>
                 </ul>
