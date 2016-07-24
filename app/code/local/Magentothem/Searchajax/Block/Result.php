@@ -142,7 +142,7 @@ class Magentothem_Searchajax_Block_Result extends Mage_Core_Block_Template {
                 $result .='</li>';
             }
         } else {
-            $result .='<div class ="error">' . $this->__('No  product was found') . '</div>';
+            $result .='<div class ="error">' . $this->__('No product was found') . '</div>';
         }
         $result .='</ul>';
         return $result;

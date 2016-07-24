@@ -24,6 +24,10 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner-search')->toHtml() ?>
+<!-- Disable temporally -->
+<?php if(false): ?>
+
 <?php if($this->getResultCount()): ?>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <div class="page-title">
@@ -52,4 +56,6 @@
         <?php endforeach;?>
     <?php endif; ?>
 </p>
+<?php endif; ?>
+
 <?php endif; ?>

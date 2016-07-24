@@ -1512,7 +1512,9 @@ if (typeof Object.create !== "function") {
 }(jQuery, window, document));
 
 jQuery(document).ready(function() {
-    jQuery("#lookbook-carousel").owlCarousel();
+    jQuery("#lookbook-carousel").owlCarousel({
+        navigation : true
+    });
 
     jQuery('#modal-lemontree').on('show.bs.modal', function (event) {
         var recipient = jQuery(event.relatedTarget); // Button that triggered the modal
