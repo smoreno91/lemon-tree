@@ -4496,7 +4496,7 @@ iframe { border: 0; }
 .contacts-index-index .fieldset { margin-top: 0px; }
 .contacts-index-index #comment { width: 100%; }
 .contacts-index-index input,
-.contacts-index-index textarea { background-color: #D3D3D3; font-size: 16px; text-transform: uppercase; }
+.contacts-index-index textarea { background-color: #D3D3D3; font-size: 16px; font-weight: bold; }
 
 .contacts-index-index input::-webkit-input-placeholder { color: #000; }
 .contacts-index-index input:-moz-placeholder { color: #000; }
@@ -4522,6 +4522,10 @@ iframe { border: 0; }
 
 #lookbook-carousel .owl-controls { margin-top: 15px; }
 #lookbook-carousel .owl-item { cursor: pointer; }
+.trending-layout img,
+#lookbook-carousel img { cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
+.trending-layout img:hover, 
+#lookbook-carousel img:hover { opacity: 0.7; }
 
 /* Code to center the modal */
 .modal { text-align: center; }
