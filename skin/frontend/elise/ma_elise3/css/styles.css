@@ -2897,7 +2897,7 @@ display: block !important;
 .banner-static-top .box-inner:hover img { -webkit-transform: scale(1.2); -moz-transform: scale(1.2); transform: scale(1.2); }
 .banner-static-top .box-inner .text{ position: absolute; text-align: center; width: 100%; top: 50%; color: #fff; margin-top: -27px; }
 .banner-static-top .box-inner .text-inner { text-align: center; }
-.banner-static-top .box-inner .text-inner h1 { color: #fff; text-transform: uppercase; font-weight: 700; font-size: 30px; text-shadow: 4px 4px 4px rgba(0, 0, 0, 1); }
+.banner-static-top .box-inner .text-inner h1 { color: #fff; text-transform: uppercase; font-weight: 700; font-size: 30px; text-shadow: 3px 3px 3px rgba(0, 0, 0, 1); }
 .banner-static-top .box-inner .text-inner a { color: #fff; text-transform: uppercase; font-weight: 700; font-size: 20px; line-height: 31px; background: #65EFC1; display: inline-block; padding: 0 15px; } 
 .banner-static-top .box-inner .text-inner a:hover { -webkit-opacity: 0.8; -moz-opacity: 0.8; opacity: 0.8;}
 .banner-static-top .box-inner2, .banner-static-top .box-inner3, .banner-static-top .box-inner6 { margin-left: 0.5px;}
