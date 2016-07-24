@@ -4535,7 +4535,7 @@ iframe { border: 0; }
 
 .modal-lemontree .modal-dialog { background-color: #1B1C1E; }
 @media screen and (min-width: 768px){
-	.modal-lemontree .modal-dialog { width: 700px; }
+	.modal-lemontree .modal-dialog { max-width: 900px; width: calc(100% - 200px); }
 }
 @media screen and (max-width: 480px){
 	.modal-lemontree .modal-dialog { width: calc(100% - 50px); }	
