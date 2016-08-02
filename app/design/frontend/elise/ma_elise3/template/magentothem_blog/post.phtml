@@ -22,13 +22,14 @@
 					<?php echo Mage::helper('blog')->__('Posted'); ?>
 				<?php endif; ?><?php echo $this->__("By"); ?> <h4 class="poster"><?php echo $post->getUser(); ?></h4>
 			</div>
-            <?php $date = strtotime(date('d/m/Y', strtotime($post->getCreatedTime()))); ?>
+            <?php $explode = explode('/', date($post->getCreatedTime())) ?>
+            <?php $newformat = strtotime($explode[1].'/'.$explode[0].'/'.$explode[2]); ?>
 			<h3>
                 <?php
-                    echo $this->__(date("F", $date));
-                    echo date(" d", $date);
+                    echo $this->__(date("F", $newformat));
+                    echo date(" d", $newformat);
                     echo " del ";
-                    echo date("Y", $date);
+                    echo date("Y", $newformat);
                 ?>
             </h3>
 		</div>
