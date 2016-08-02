@@ -1521,12 +1521,14 @@ jQuery(document).ready(function() {
 
         var modal = jQuery(this);
         modal.find('.box-image img').attr('src', recipient.find('img').attr('src'));
-        modal.find('.box-text').text(recipient.data('text'));
+        modal.find('.box-text').text(recipient.data('text') ? recipient.data('text') : "");
 
-        var price = "$ " + recipient.data('price').toFixed(0).replace(/./g, function(c, i, a) {
-            return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "." + c : c;
-        });
-
+        var price = "";
+        if(recipient.data('price')){
+            price = "$ " + recipient.data('price').toFixed(0).replace(/./g, function(c, i, a) {
+                return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "." + c : c;
+            });            
+        }
         modal.find('.box-price').text(price);
     })
 });
