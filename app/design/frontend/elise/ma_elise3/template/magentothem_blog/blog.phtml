@@ -20,11 +20,12 @@
 							<?php echo '<img alt="" src="'.Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA). $post->getThumbnailimage().'"/>'; ?>
 						<?php if($post->getAddress()): ?></a><?php endif; ?>
 						
-						<?php $s = $post->getCreatedTime(); /*$date = strtotime($s);*/ ?>
-						<?php $date = strtotime(date('d/m/Y', strtotime($s))); ?>
+						<?php $explode = explode('/', date($post->getCreatedTime())) ?>
+						<?php $newformat = strtotime($explode[1].'/'.$explode[0].'/'.$explode[2]); ?>
+
 						<div class="time">
-							<span class="month"><?php echo $this->__(date("M", $date)) ?></span>
-							<span class="date"><?php echo date("d", $date) ?></span>
+							<span class="month"><?php echo $this->__(date("M", $newformat)) ?></span>
+							<span class="date"><?php echo date("d", $newformat) ?></span>
 						</div>
 					</div>
 					

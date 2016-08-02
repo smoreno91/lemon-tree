@@ -3023,7 +3023,8 @@ text-decoration: none; margin-top: 20px; letter-spacing: 2px;  }
 .blog-index-list .images-container .time .date { font-size: 14px; }
 .blog-index-list .des-container .des { padding: 40px 0 0 40px;}
 
-.postWrapper img { width: 100%; }
+.postWrapper .images-container { text-align: center; }
+.postWrapper img { max-width: 900px; }
 
 .postTitle { margin: 15px 0; }
 .postTitle h2 { font-size: 20px; text-transform: capitalize; font-weight: normal; margin: 0px; padding: 0px; }

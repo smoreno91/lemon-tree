@@ -36,7 +36,7 @@ $className = Mage::getConfig()->getBlockClassName('custommenu/custommenu');
 				$showhome = Mage::getStoreConfig('custommenu/general/showhome');
 				$active = '';
 				if(Mage::getSingleton('cms/page')->getIdentifier() == 'elise_home'  && Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms') :
-				    $active = ' act';
+				    // $active = ' act';
 				endif; 
 				if($showhome){
 				    $id     = "_home";
