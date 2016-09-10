@@ -1523,12 +1523,33 @@ jQuery(document).ready(function() {
         modal.find('.box-image img').attr('src', recipient.find('img').attr('src'));
         modal.find('.box-text').html(recipient.data('text') ? recipient.data('text') : "");
 
-        var price = "";
-        if(recipient.data('price')){
-            price = "$ " + recipient.data('price').toFixed(0).replace(/./g, function(c, i, a) {
-                return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "." + c : c;
-            });            
+        recipient = jQuery("#modal-datacontent");
+
+        if(recipient.data('textlink') && recipient.data('link')){
+            var textlink = recipient.data('textlink');
+            var link = recipient.data('link');
+
+            var beforelink = recipient.data('beforelink') ? recipient.data('beforelink') : "";
+            var afterlink = recipient.data('afterlink') ? recipient.data('afterlink') : "";
+
+            var text = beforelink + " <a href='"+link+"'>"+textlink+"</a> " + afterlink;
+            modal.find('.box-link').html(text);
         }
-        modal.find('.box-price').text(price);
+
+
+        if(recipient.data('linkfacebook') || recipient.data('linkinstagram')){
+
+            var text = "<div class='social-media social-media-modal'>";
+
+            if(recipient.data('linkfacebook')){
+                text += "<a href='"+recipient.data('linkfacebook')+"' target='_blank'><i class='fa fa-facebook' aria-hidden='true'></i></a>";
+            }
+            if(recipient.data('linkinstagram')){
+                text += "<a href='"+recipient.data('linkinstagram')+"' target='_blank'><i class='fa fa-instagram' aria-hidden='true'></i></a>";
+            }
+            text += "</div>";
+
+            modal.find('.box-social-links').html(text);
+        }
     })
 });

@@ -4495,6 +4495,9 @@ iframe { border: 0; }
 .social-media-bigger { margin-top: 35px; }
 .social-media-bigger i { padding: 11px; height: 60px; width: 60px; font-size: 40px; }
 
+.social-media-modal { text-align: right; padding: 10px 0; }
+.social-media-modal i { font-style: normal; text-align: center; height: 30px; width: 30px; font-size: 18px; }
+
 .contacts-index-index .fieldset { margin-top: 0px; }
 .contacts-index-index #comment { width: 100%; }
 .contacts-index-index input,
@@ -4568,4 +4571,4 @@ iframe { border: 0; }
 .modal-lemontree .modal-body .box-close:hover > span { background-color: #ccc; }
 .modal-lemontree .modal-body .box-container { padding: 10px 15px; border: 1px solid #8F8F90; }
 .modal-lemontree .modal-body .box-text { padding-bottom: 10px; text-align: justify; }
-.modal-lemontree .modal-body .box-price { padding-bottom: 10px; font-weight: bold; }
+.modal-lemontree .modal-body .box-link { padding-bottom: 10px; text-align: right;}
