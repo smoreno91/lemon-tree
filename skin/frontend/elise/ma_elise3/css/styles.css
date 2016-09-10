@@ -2899,7 +2899,7 @@ display: block !important;
 .banner-static-top .box-inner .text-inner { text-align: center; }
 .banner-static-top .box-inner .text-inner h1 { color: #fff; text-transform: uppercase; font-weight: 700; font-size: 30px; text-shadow: 3px 3px 3px rgba(0, 0, 0, 1); }
 .banner-static-top .box-inner .text-inner a { color: #fff; text-transform: uppercase; font-weight: 700; font-size: 20px; line-height: 31px; background: #65EFC1; display: inline-block; padding: 0 15px; } 
-.banner-static-top .box-inner .text-inner a:hover { -webkit-opacity: 0.8; -moz-opacity: 0.8; opacity: 0.8;}
+.banner-static-top .box-inner .text-inner a:hover { -webkit-opacity: 0.8; -moz-opacity: 0.8; opacity: 0.8; cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s;}
 .banner-static-top .box-inner2, .banner-static-top .box-inner3, .banner-static-top .box-inner6 { margin-left: 0.5px;}
 .banner-static-top .box-inner4 { margin-right: 1px; }
 
@@ -3037,8 +3037,17 @@ text-decoration: none; margin-top: 20px; letter-spacing: 2px;  }
 .blog-index-list .post-by .post { float: left; }
 .postContent { padding: 15px 0 0; }
 
-.magentothem-blog-read-more { color: #fff; font-size: 11px; font-weight: 700; padding: 0 20px; display: inline-block; text-transform: uppercase; overflow: hidden; margin-top: 10px; line-height: 35px; letter-spacing: 3px; background-color: #BCE539; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;}
-.magentothem-blog-read-more:hover { background-color: #65EFC1; color: #fff; } 
+.blog-navigation { overflow: hidden; }
+.blog-navigation:after { content:''; clear: both; }
+.blog-navigation .next { float: right; }
+
+.magentothem-blog-read-more,
+.blog-navigation .prev,
+.blog-navigation .next { color: #fff; font-size: 11px; font-weight: 700; padding: 0 20px; display: inline-block; text-transform: uppercase; overflow: hidden; margin-top: 10px; line-height: 35px; letter-spacing: 3px; background-color: #BCE539; transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;}
+.magentothem-blog-read-more:hover,
+.blog-navigation .prev:hover,
+.blog-navigation .next:hover { background-color: #65EFC1; color: #fff; } 
+
 
 .postDetails {  }
 
