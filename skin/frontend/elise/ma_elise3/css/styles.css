@@ -4528,14 +4528,14 @@ iframe { border: 0; }
 .peluditos-layout [data-toggle=modal] { margin: 0 auto; text-align: center; }
 .trending-layout img,
 .peluditos-layout img,
-#lookbook-carousel img { cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
+#lookbook-carousel img { max-width: 540px; cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
 .trending-layout img:hover,
 .peluditos-layout img:hover,
 #lookbook-carousel img:hover { opacity: 0.7; }
 
-@media screen and (min-width: 768px) { 
-	.trending-layout div.col-sm-4,
-	.peluditos-layout div.col-sm-4 { margin: 10px 0; }
+@media screen and (max-width: 768px) { 
+	.trending-layout .col-sm-4,
+	.peluditos-layout .col-sm-4 { margin: 10px 0; }
 }
 
 /* Code to center the modal */
