@@ -3,27 +3,28 @@
 
 <?php  
     $prevCollection = Mage::getModel('blog/post')->getCollection()
-          ->addFieldToFilter('post_id', array('lt' => $post->getId()))
-          ->addFieldToFilter('status', 1);
+        ->addFieldToFilter('post_id', array('lt' => $post->getId()))
+        ->addFieldToFilter('status', 1)
+        ->addOrder('post_id','DESC');;
     $prevCollection->getSelect()->limit(1);
     if($prevCollection->count()){
-      $prev = $prevCollection->getFirstItem();
+        $prev = $prevCollection->getFirstItem();
     }
 
     $nextCollection = Mage::getModel('blog/post')->getCollection()
-         ->addFieldToFilter('post_id', array('gt' => $post->getId()))
-         ->addFieldToFilter('status', 1);
+        ->addFieldToFilter('post_id', array('gt' => $post->getId()))
+        ->addFieldToFilter('status', 1);
     $nextCollection->getSelect()->limit(1);
     if($nextCollection->count()){
-      $next = $nextCollection->getFirstItem();
+        $next = $nextCollection->getFirstItem();
     }
 ?>
 
 <div class="blog-navigation">
-    <?php if($prev && $prev->getId()):?>
+    <?php if(isset($prev) && $prev->getId()):?>
         <a href="/blog/<?php echo $prev->getIdentifier(); ?>" class="prev">< Anterior</a>
     <?php endif;?>
-    <?php if($next && $next->getId()):?>
+    <?php if(isset($next) && $next->getId()):?>
         <a href="/blog/<?php echo $next->getIdentifier(); ?>" class="next">Siguiente ></a>
     <?php endif;?>
 </div>
