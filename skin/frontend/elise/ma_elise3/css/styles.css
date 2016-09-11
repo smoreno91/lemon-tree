@@ -890,11 +890,16 @@ display: block !important;
 .pt_custommenu #pt_menu_home .parentMenu a:after {
 	display: none;
 }
- 
-.pt_custommenu div.pt_menu.act .parentMenu, .pt_custommenu div.pt_menu.active .parentMenu, .pt_custommenu div.pt_menu .parentMenu:hover {
-   
-}
 
+.pt_custommenu #pt_menu_home {
+	display: none;
+}
+@media (min-width: 768px){
+	.pt_custommenu #pt_menu_home {
+		display: inline-block;
+	}
+}
+ 
 .pt_custommenu .itemMenu h4.level1,
 .pt_custommenu .itemMenu a.level1{
     font-size: 16px;
