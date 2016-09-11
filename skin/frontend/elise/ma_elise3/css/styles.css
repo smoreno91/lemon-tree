@@ -326,7 +326,7 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .buttons-set-order { margin:10px 0 0; }
 .buttons-set-order .please-wait { padding:12px 7px 0 0; }
 
-.fieldset { border:1px solid #ddd; background:#fff; padding:22px 25px 12px 33px; margin:28px 0; }
+.fieldset { border:1px solid #ddd; background:#fff; padding: 20px 5px 20px 20px; margin:28px 0; }
 .fieldset .legend { float:left;  font-style: italic; font-size:13px; border:1px solid #ddd; background:#fff; color:#333; margin:-33px 0 0 -10px; padding: 3px 8px; position:relative; }
 
 /* Form Validation */
@@ -4436,9 +4436,9 @@ transition: all 0.5s ease-out;
     .header .form-search input.input-text { width: 225px;} 
     .form-list .input-box,
     .form-list li.wide textarea,
-    .product-view .box-reviews .form-add .form-list .input-box { width: 250px;}
+    .product-view .box-reviews .form-add .form-list .input-box { /*width: 250px;*/}
     .form-list input.input-text, .form-list li.wide .input-box,
-    .product-view .box-reviews .form-add .form-list input.input-text, .product-view .box-reviews .form-add .form-list textarea { width: 250px;}   
+    .product-view .box-reviews .form-add .form-list input.input-text, .product-view .box-reviews .form-add .form-list textarea { /*width: 250px; */}   
 	 .block-header div.email { margin: 0; }
 	.banner-static3 .banner-static-inner h3 { padding: 0 30px; font-size: 23px} 
 	.block-subscribe input.input-text { width: 156px; }
