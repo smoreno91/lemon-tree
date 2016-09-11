@@ -4548,9 +4548,6 @@ iframe { border: 0; }
 @media screen and (max-width: 768px) { 
 	.trending-layout .col-sm-4,
 	.peluditos-layout .col-sm-4 { margin: 10px 0; }
-	.trending-layout img,
-	.peluditos-layout img,
-	#lookbook-carousel img { max-width: 540px; }
 }
 
 /* Code to center the modal */
