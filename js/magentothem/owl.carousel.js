@@ -1523,7 +1523,11 @@ jQuery(document).ready(function() {
         modal.find('.box-image img').attr('src', recipient.find('img').attr('src'));
         modal.find('.box-text').html(recipient.data('text') ? recipient.data('text') : "");
 
-        recipient = jQuery("#modal-datacontent");
+        if(recipient.data('datacontent')){
+            recipient = jQuery(recipient.data('datacontent'));
+        }else{
+            recipient = jQuery("#modal-datacontent");
+        }
 
         if(recipient.data('textlink') && recipient.data('link')){
             var textlink = recipient.data('textlink');
