@@ -881,9 +881,13 @@ display: block !important;
 .pt_custommenu div.pt_menu .parentMenu span.block-title:hover,
 .pt_custommenu #pt_menu_link .parentMenu ul li a.act,
 .pt_custommenu #pt_menu_link .parentMenu ul li a:hover,
-.pt_custommenu div.pt_menu.act .parentMenu a, .pt_custommenu div.pt_menu.active .parentMenu a {
-	color: #65EFC1; 
-}
+.pt_custommenu div.pt_menu.act .parentMenu a,
+.pt_custommenu div.pt_menu.active .parentMenu a { color: #65EFC1; }
+
+.pt_custommenu div.pt_menu .parentMenu a.special-color:hover,
+.pt_custommenu #pt_menu_link .parentMenu ul li a.special-color.act,
+.pt_custommenu div.pt_menu.special-color.act .parentMenu a,
+.pt_custommenu div.pt_menu.special-color.active .parentMenu a { color: #F26B0F !important; }
  
 .pt_custommenu div.pt_menu.pt_menu_no_child .parentMenu a:after,
 .pt_custommenu #pt_menu_link ul li a:after,
