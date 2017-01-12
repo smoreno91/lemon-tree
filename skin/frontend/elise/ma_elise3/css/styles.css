@@ -394,17 +394,15 @@ p.required { font-size:11px; text-align:right; color:#65EFC1; font-family: arial
 .pager select { font-style: normal; color: #777; height: 30px; font-size: 14px; }
 .pager .amount { float:left; margin: 4px 30px 0 0; }
 
-.pager .pages {  margin-left: 15px; display: none; }
+.pager .pages {  margin-left: 15px; }
 .pager .pages strong { font-weight: normal; color: #363636; text-transform: capitalize; font-size: 14px; display: none;}
 .pager .pages ol { display:inline; }
-.pager .pages li { float: left; margin:0 0 0 5px; font-size: 16px; line-height: 43px; background: #f5f5f5; color: #393939;  display: block; width: 49px; height: 49px; font-weight: 700; }
-.pager .pages li:last-child { }
-.pager .pages .current, .pager .pages li a:hover { background: #fff; border: 3px solid #333;   }
-.pager .pages li a { font-size: 16px; color: #363636; display: block; display: blcok; font-weight: 700;  width: 49px; height: 49px; border: 3px solid transparent;  }
+.pager .pages li { float: left; font-weight: 300; text-transform: capitalize; color: #777; font-size: 14px; padding: 5px 3px; margin: 0 14px; }
+.pager .pages .current, .pager .pages li a:hover { font-size: 17px; font-weight: bold; }
+.pager .pages li a { font-size: 16px; color: #777; display: block; }
 
 .pager .pages li a.next,
-.pager .pages li a.previous
- { font-size: 0;}
+.pager .pages li a.previous { font-size: 0;}
 .pager .pages li a.next:before { font-size: 14px; font-family: FontAwesome; content: "\f105"; display: block; }
 .pager .pages li a.previous:before { font-size: 14px; font-family: FontAwesome; content: "\f104"; display: block; }
 
